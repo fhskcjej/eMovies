@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Комментарии к фильму{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">Комментарии к "{{ movie.title }}"</h2>
+
+  <div class="mb-4">
+    {% for comment in comments %}
+      <div class="card mb-3">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">
+            {{ comment.user.username }} — {{ comment.added_at|date:"d.m.Y H:i" }}
+          </h6>
+          <p class="card-text">{{ comment.text }}</p>
+        </div>
+      </div>
+    {% empty %}
+      <p>Комментариев пока нет. Будьте первым!</p>
+    {% endfor %}
+  </div>
+
+  {% if user.is_authenticated %}
+    <form method="post" action="{% url 'add_comment' movie.id %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Добавить комментарий</button>
+    </form>
+  {% else %}
+    <p>Чтобы оставить комментарий, <a href="{% url 'login' %}">войдите в аккаунт</a>.</p>
+  {% endif %}
+</div>
+{% endblock %}

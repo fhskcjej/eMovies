@@ -1,0 +1,41 @@
+{% load static %}
+<footer class="bg-dark text-light pt-3 pb-3 mt-3">
+
+  <div class="container">
+    <div class="row">
+      {% load static %}
+      <!-- Логотип и название -->
+      <div class="col-md-4 mb-3">
+        <div class="d-flex align-items-center">
+          <img src="{% static 'images/logo.jpg' %}" alt="eMovies" style="width: 50px; height: 40px;" class="me-2">
+          <h5 class="mb-0">eMovies</h5>
+        </div>
+        <small class="d-block mt-2">&copy; {{ year }} Все права защищены</small>
+      </div>
+
+      <!-- Навигация -->
+      <div class="col-md-4 mb-3">
+        <h6>Навигация</h6>
+        <ul class="list-unstyled">
+          <li><a href="{% url 'home' %}" class="text-light text-decoration-none">Главная</a></li>
+          <li><a href="{% url 'cart:cart' %}" class="text-light text-decoration-none">Корзина</a></li>
+          <li><a href="{% url 'purchase_history' %}" class="text-light text-decoration-none">Мои покупки</a></li>
+          <li><a href="{% url 'edit_profile' %}" class="text-light text-decoration-none">Профиль</a></li>
+        </ul>
+      </div>
+
+      <!-- Контакты и соцсети -->
+      <div class="col-md-4 mb-3">
+        <h6>Связаться с нами</h6>
+        <p class="mb-1">Email: <a href="mailto:support@emovies.com" class="text-light">support@emovies.com</a></p>
+        <div class="d-flex gap-3">
+          <a href="https://facebook.com" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://youtube.com" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,52 @@
+{% load static %}
+<header class="navbar navbar-expand-lg navbar-dark bg-dark px-4 py-2">
+  {% load static %}
+  <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+    <img src="{% static 'images/logo.jpg' %}" alt="eMovies" height="32" class="me-2">
+    <span class="fw-bold">eMovies</span>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'movie_list' %}">Фильмы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'cart:cart' %}">Корзина</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'purchase_history' %}">Покупки</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav">
+      {% if user.is_authenticated %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+            {% if user.avatar %}
+              <img src="{{ user.avatar.url }}" alt="Avatar" class="rounded-circle me-1" width="30" height="30">
+            {% else %}
+              <img src="{{ MEDIA_URL }}avatars/default.jpeg" alt="Default Avatar" class="rounded-circle me-1" width="30" height="30">
+            {% endif %}
+            {{ user.username }}
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="{% url 'edit_profile' %}">Профиль</a></li>
+            <li><a class="dropdown-item" href="{% url 'logout' %}">Выход</a></li>
+          </ul>
+        </li>
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Войти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}">Регистрация</a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</header>

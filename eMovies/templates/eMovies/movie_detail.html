@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ movie.title }} — eMovies{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            {% if movie.poster %}
+                <img src="{{ movie.poster.url }}" alt="{{ movie.title }}" class="img-fluid rounded shadow">
+            {% else %}
+                <img src="{% static 'images/no-poster.jpeg' %}" alt="No poster" class="img-fluid rounded shadow">
+            {% endif %}
+        </div>
+
+        <div class="col-md-8">
+            <h2>{{ movie.title }}</h2>
+            <p><strong>Описание:</strong> {{ movie.summary }}</p>
+            <p><strong>Дата выхода:</strong> {{ movie.release_date }}</p>
+            <p><strong>Режиссёр:</strong> {{ movie.director.name }}</p>
+            </p>
+            <p><strong>Актёры:</strong>
+                {% for actor in movie.actors.all %}
+                    {{ actor.name }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+            <p><strong>Жанры:</strong>
+                {% for genre in movie.genres.all %}
+                    {{ genre.name }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+            <p><strong>Рейтинг:</strong> {{ movie.rating }}/10</p>
+
+            {% if user.is_authenticated %}
+                <form action="{% url 'cart:add_to_cart' movie.id %}" method="post">
+                    {% csrf_token %}
+                    <button class="btn btn-success">Добавить в корзину</button>
+                </form>
+            {% else %}
+                <p><a href="{% url 'login' %}">Войдите</a>, чтобы купить фильм.</p>
+            {% endif %}
+            <a href="{% url 'movie_comments' movie.id %}" class="btn btn-outline-secondary mt-2">Комментарии</a>
+        </div>
+    </div>
+
+    {% if movie.youtube_trailer_id %}
+    <div class="row mt-4">
+        <div class="col-12">
+            <h4>Трейлер</h4>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/{{ movie.youtube_trailer_id }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="text-center mt-4">
+    <a href="{% url 'movie_comments' movie.id %}" class="btn btn-outline-primary btn-lg">Обсудить фильм</a>
+</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">🎬 Мои фильмы</h2>
+
+  {% if purchases %}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      {% for purchase in purchases %}
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            {% if purchase.movie.posters %}
+              <img src="{{ purchase.movie.posters.url }}" class="card-img-top" alt="{{ purchase.movie.title }}">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ purchase.movie.title }}</h5>
+              <p class="card-text text-muted">Дата покупки: {{ purchase.purchased_at|date:"d.m.Y H:i" }}</p>
+              <a href="{% url 'eMovies:movie_detail' purchase.movie.id %}" class="btn btn-outline-primary btn-sm mt-2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-info mt-3">
+      Вы ещё не купили ни одного фильма.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

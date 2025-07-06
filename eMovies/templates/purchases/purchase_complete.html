@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block title %}Покупка завершена{% endblock %}
+
+{% block content %}
+<style>
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<div class="container mt-5 fade-in">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <div class="alert alert-success text-center shadow-sm">
+        <h4 class="alert-heading">
+          <i class="bi bi-check-circle-fill text-success"></i> Спасибо за покупку!
+        </h4>
+        <p class="mb-0">Фильм(ы) добавлены в раздел «Мои покупки».</p>
+      </div>
+
+      {% if purchases %}
+      <div class="card shadow-sm border-0 mt-4">
+        <div class="card-header bg-primary text-white">
+          <h5 class="mb-0"><i class="bi bi-collection-play"></i> Недавние покупки</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for purchase in purchases %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>{{ purchase.movie.title }}</span>
+              <small class="text-muted">{{ purchase.purchased_at|date:"d.m.Y H:i" }}</small>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      <div class="text-center mt-4">
+        <a href="{% url 'purchase_history' %}" class="btn btn-outline-success me-2">
+          <i class="bi bi-bag-check"></i> Мои покупки
+        </a>
+        <a href="{% url 'home' %}" class="btn btn-primary">
+          <i class="bi bi-house-door-fill"></i> На главную
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Оформление заказа{% endblock %}
+{% block content %}
+<h2>Оформление заказа</h2>
+
+<form method="post">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label for="card_number" class="form-label">Номер карты</label>
+    <input type="text" name="card_number" class="form-control" maxlength="16" required>
+  </div>
+  <div class="mb-3">
+    <label for="expiration_date" class="form-label">Срок действия (ММ/ГГ)</label>
+    <input type="text" name="expiration_date" class="form-control" maxlength="5" required>
+  </div>
+  <div class="mb-3">
+    <label for="cvv" class="form-label">CVV</label>
+    <input type="text" name="cvv" class="form-control" maxlength="3" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Завершить покупку</button>
+</form>
+{% endblock %}

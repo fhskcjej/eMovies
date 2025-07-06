@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad2bb7cf-5db4-4f25-9ea0-99a09ca90138" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/eMovies.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/migrations/0002_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/cart/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/migrations/0002_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/comments/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/context_processors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/management/commands/fetch_trailers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/management/commands/load_movies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/migrations/0002_remove_movie_tmdb_id_remove_movie_youtube_trailer_id_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/eMovies_app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/avatars/Icon_6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/avatars/default.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/avatars/default_WqdWWzX.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/poster/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/media/posters/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/movies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/passwords" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/migrations/0002_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/purchases/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/static/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/static/images/no-poster.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/cart/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/comments/movie_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/eMovies/movie_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/eMovies/movie_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/purchases/purchase_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/purchases/purchase_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/users/card_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/users/edit_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/users/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/templates/users/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/migrations/0002_rename_cvv_card_cvv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/migrations/0003_alter_user_avatar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eMovies/users/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2zN6bagxJR0DuD64laLTUMqvxUe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Start Server Django.executor&quot;: &quot;Run&quot;,
+    &quot;Python.settings.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python/eMovies/eMovies&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Mercurial&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\eMovies\eMovies" />
+      <recent name="D:\python\eMovies\eMovies\static\images" />
+      <recent name="D:\python\eMovies\eMovies\templates" />
+      <recent name="D:\python\eMovies\eMovies\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python\eMovies\eMovies\media" />
+      <recent name="D:\python\eMovies\eMovies\static\images" />
+      <recent name="D:\python\eMovies\eMovies\media\avatars" />
+      <recent name="D:\python\eMovies\eMovies\templates\partials" />
+      <recent name="D:\python\eMovies\eMovies\templates\purchases" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Start Server Django" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="eMovies" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/eMovies/eMovies" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/eMovies/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Start Server Django" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad2bb7cf-5db4-4f25-9ea0-99a09ca90138" name="Changes" comment="" />
+      <created>1751559255206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751559255206</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/eMovies/cart/models.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/eMovies/purchases/models.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/eMovies/eMovies/urls.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/eMovies/eMovies_app/models.py</url>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
