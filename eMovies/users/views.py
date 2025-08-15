@@ -1,22 +1,20 @@
-from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from .forms import *
-from eMovies_app.models import *
 from .models import *
 
 
 def register_view(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
             return redirect('profile')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
     return render(request, 'users/register.html', {'form': form})
 
 
@@ -67,7 +65,4 @@ def card_edit_view(request):
     else:
         form = CardForm(instance=card)
     return render(request, 'users/card_form.html', {'form': form})
-
-
-
 
