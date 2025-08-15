@@ -9,7 +9,6 @@ from django.conf import settings
 class User(AbstractUser):
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True, default='media/avatars/default.jpeg')
     card = models.OneToOneField('Card', on_delete=models.SET_NULL, null=True, related_name='card_owner')
-    objects = models.Model
 
     def __str__(self):
         return self.username
